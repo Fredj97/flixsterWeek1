@@ -2,21 +2,22 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#A9A9A9"
+    android:id="@+id/container"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="#A9A9A9">
 
     <ImageView
         android:id="@+id/ivPoster"
         android:layout_width="100dp"
-        android:maxHeight="150dp"
-        android:maxWidth="150dp"
-        android:scaleType="fitXY"
-        android:adjustViewBounds="true"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_margin="5dp"
-        tools:srcCompat="@tools:sample/avatars"/>
+        android:adjustViewBounds="true"
+        android:maxWidth="150dp"
+        android:maxHeight="150dp"
+        android:scaleType="fitXY"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/tvTitle"
@@ -24,9 +25,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:layout_toEndOf="@id/ivPoster"
-        android:textStyle="bold"
         android:textColor="@color/teal_200"
         android:textSize="24dp"
+        android:textStyle="bold"
         tools:text="Jurassic World Dominion" />
 
     <TextView
